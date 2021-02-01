@@ -24,7 +24,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    
     <title>React App</title>
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +41,28 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+
+
+    <script>
+      let firebaseConfig = {
+        apiKey: "AIzaSyADDhJSA_hg7k4G56u0K4WiUvoCK8A1sFA",
+        authDomain: "eride-8b0ae.firebaseapp.com",
+        projectId: "eride-8b0ae",
+        storageBucket: "eride-8b0ae.appspot.com",
+        messagingSenderId: "542614516957",
+        appId: "1:542614516957:web:0d8f15f2e4d325d49fd734"
+      }
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>

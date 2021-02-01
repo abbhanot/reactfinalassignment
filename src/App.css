@@ -36,3 +36,285 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  width:95%;
+}
+
+.headerOptions{
+  display:flex;
+}
+
+.headerOption{
+  margin-right:20px;
+  cursor: pointer;
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 51px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.allCards{
+  display:grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 100% 100;
+}
+
+.card{
+  width: 350px;
+  height: 619px;
+  background: #FFFFFF;
+  border: 1px solid #FF7BAC;
+  box-shadow: 11px 12px 4px rgba(255, 123, 172, 0.46);
+  margin: 20px;
+}
+
+.image{width:100%}
+
+.selectedCar{
+  display:flex;
+}
+
+.imageSelected{
+  width:65%
+}
+.selectedCarPart11{
+  display:flex;
+}
+.selectedCarPart12{
+  display:flex;
+  justify-content: space-between;
+    width: 70%;
+}
+.selectedCarPart13{
+  display:flex;
+  width:85%;
+  height: 60px;
+  background: #000000;
+  justify-content: space-around;
+}
+
+.available{
+  width: 19%;
+}
+.browseHeader{width:40%}
+
+.footerSelecetd{
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+
+
+color: #FF7BAC;
+}
+.flex1{
+  display: flex;
+  flex-direction: column;
+}
+.selectedCarPart1{
+  width:63%;
+}
+.selectedCarPart2{
+  background: #FFFFFF;
+border: 1px solid #FF7BAC;
+box-sizing: border-box;
+box-shadow: 11px 12px 4px rgba(255, 123, 172, 0.25);
+width:35%;
+}
+
+.small{
+  width: 100px;
+height: 35px;
+background: #FF7BAC;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.smallOuter{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dateText{
+  background: #FFFFFF;
+box-shadow: 6px 4px 4px rgba(255, 123, 172, 0.66);
+}
+
+.bookNowButton{
+  background: #FF7BAC;
+    width: 75%;
+    height: 8%;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.bookedCard{
+  margin: 48px;
+  width:50%;
+  background: #FFFFFF;
+border: 1px solid #FF7BAC;
+box-sizing: border-box;
+box-shadow: 11px 12px 4px rgba(255, 123, 172, 0.25);
+}
+
+.bookingHead{
+  width:20%;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.firstRow{
+  display:flex;
+  justify-content: space-around;;
+}
+
+.bookedFooter{
+  display:flex;
+  justify-content: space-around;
+}
+
+.font{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 30px;
+
+color: #FF7BAC;
+}
+.imgAndInfo{display:flex;}
+.dummyData{
+  margin:auto;
+}
+
+.suitabilityTool{
+  display: flex;
+    /* align-content: center;
+    justify-content: center; */
+    flex-direction: column;
+}
+
+.questions{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.questionButtonNext{
+  background: #FF7BAC;
+  width: 150px;
+height: 50px;
+cursor:pointer;
+}
+
+.questionDiv{
+  display: flex;;
+  height: 400px;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.optionBox{
+  border: 1px solid #FF7BAC;
+box-sizing: border-box;
+width: 800px;
+height: 50px;
+}
+
+.questionBox{
+  display:flex;
+  width:800px;
+  cursor:pointer;
+}
+
+.buttons{
+  width: 84%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+
+.quesAndMap{
+  display:flex;
+}
+
+.ques{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.zipBox{
+  background: #FFFFFF;
+border: 1px solid #FF7BAC;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(255, 123, 172, 0.25);
+width: 270px;
+    height: 50px;
+}
+.map{width: 67%; height: 350px;
+}
+
+.questionButtonStart{
+  background: #FF7BAC;
+  width: 150px;
+height: 50px;
+cursor:pointer;
+margin-left: 1000px;
+}
+.questionBoxStart{
+  display: flex;
+  width:800px;
+  margin-left:100px;
+  cursor:pointer;
+  height: 370px;
+}
+
+.progressbar{
+  width: 20%;
+height: 18px;
+background: #FF7BAC;
+margin-left: 100px;
+}
+.progressbar1{
+  width: 50%;
+height: 18px;
+background: #FF7BAC;
+margin-left: 100px;
+}
+.progressbar2{
+  width: 85%;
+height: 18px;
+background: #FF7BAC;
+margin-left: 100px;
+}
+.questionButtonBack{
+  background: #FF7BAC;
+  width: 150px;
+height: 50px;
+cursor:pointer;
+margin-left: 100px;
+}
+
+.searchAndSort{
+  display: flex;
+    width: 87%;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
