@@ -13,7 +13,7 @@ const CarCards = () => {
     useEffect(()=>{
         if(cards.length === 1)
         getDataAction(dispatchRef,1)
-    })
+    },[])
     const fetchMoreData =()=>{
         if(scrollable){
             const num = cards.length/3+1;
