@@ -12,19 +12,19 @@ const Question1 = () =>{
     const[bgcolor3,setBgColor3] = useState("white")
 
     useEffect(()=>{
-        if(answer1 == "Private off seat parking")
+        if(answer1 === "Private off seat parking")
         {setBgColor1("#FF7BAC")
         setBgColor2("white")
         setBgColor3("white")}
-        if(answer1 == "Shared parking")
+        if(answer1 === "Shared parking")
         {setBgColor1("white")
         setBgColor2("#FF7BAC")
         setBgColor3("white")}
-        if(answer1 == "On Street parking")
+        if(answer1 === "On Street parking")
         {setBgColor1("white")
         setBgColor2("white")
         setBgColor3("#FF7BAC")}
-    },[])
+    },[answer1])
     let history=useHistory()
     const backHandle = () => {
     history.push("/suitability")
@@ -62,7 +62,7 @@ const Question1 = () =>{
     </div>
     <div className="buttons">
     <button onClick={backHandle} className="questionButtonNext">Back</button>
-    <button onClick={nextHandle} className="questionButtonNext" disabled={answer1==""}>Next</button>
+    <button onClick={nextHandle} className="questionButtonNext" disabled={answer1===""}>Next</button>
     </div>
     </div></>)
 }

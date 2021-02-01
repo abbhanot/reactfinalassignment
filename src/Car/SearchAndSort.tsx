@@ -5,7 +5,7 @@ import { getDataAction, searchDataAction, sortDataAction } from '../CarStore/Act
 const SearchAndSort =(props:any)=>{
     const dispatchRef2 = useDispatch()
     const [searchTerm, setSearchTerm] = useState('');
-    const [isSearching, setIsSearching] = useState(false);
+    //const [isSearching, setIsSearching] = useState(false);
     const debouncedSearchTerm = useDebounce(searchTerm, 500);
     const handleSort=(e : React.ChangeEvent<HTMLSelectElement>)=>{
         const order = e.target.value==="1"?"asc":"desc"
@@ -37,7 +37,7 @@ const SearchAndSort =(props:any)=>{
     useEffect(
              () => {
                if (debouncedSearchTerm) {
-                 setIsSearching(true);
+                 //setIsSearching(true);
                  searchDataAction(dispatchRef2,debouncedSearchTerm)
                  }
                  else{

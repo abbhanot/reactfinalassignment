@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import CarCard from './CarCard'
-import { connect, useDispatch, useSelector } from "react-redux";
-import { getDataAction, searchDataAction, sortDataAction } from '../CarStore/Actions';
+import { useDispatch, useSelector } from "react-redux";
+import { getDataAction } from '../CarStore/Actions';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import SearchAndSort from './SearchAndSort';
 
@@ -11,9 +11,9 @@ const CarCards = () => {
     const dispatchRef = useDispatch();
     const dispatchRef2 = useDispatch();
     useEffect(()=>{
-        if(cards.length == 1)
+        if(cards.length === 1)
         getDataAction(dispatchRef,1)
-    },[])
+    })
     const fetchMoreData =()=>{
         if(scrollable){
             const num = cards.length/3+1;

@@ -12,7 +12,7 @@ const MyBooking = () => {
         );
        }, [])
     const bookedItem = useSelector((state:any) => state.bookedItem);
-    const dummyItem = useSelector((state:any) => state.dummyData);
+    //const dummyItem = useSelector((state:any) => state.dummyData);
     
     const efficiency = bookedItem?+bookedItem.efficiency.slice(0, -3):1
     const charge1 = Math.floor(137/efficiency)
@@ -31,7 +31,7 @@ const MyBooking = () => {
                 <div>{bookedItem.fromDate}-{bookedItem.toDate}</div>
             </div>
             <div className="imgAndInfo">
-            <img src={bookedItem.image} className="imageSelected"></img>
+            <img src={bookedItem.image} className="imageSelected" alt=""></img>
             <div className="dummyData">
                 
                 <div>{dummyInformation.annualFuel}</div>

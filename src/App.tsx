@@ -1,16 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import {
   FirebaseAuthProvider,
   FirebaseAuthConsumer,
-  IfFirebaseAuthed,
-  IfFirebaseAuthedAnd
+  IfFirebaseAuthed
 } from "@react-firebase/auth";
-import CarCards from './Car/CarCards';
-import { Route, Link, BrowserRouter as Router, Switch, useHistory, BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import { Provider } from 'react-redux';
 import store from './CarStore/Store'

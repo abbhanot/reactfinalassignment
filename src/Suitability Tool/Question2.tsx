@@ -12,7 +12,7 @@ Geocode.enableDebug();
 
 
 
-const AnyReactComponent = ({ text }:any) => <div><img width="25" src='https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png'/></div>;
+const AnyReactComponent = ({ text }:any) => <div><img width="25" src='https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png' alt=""/></div>;
 
 const Question2 = () =>{
     let history=useHistory()

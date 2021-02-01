@@ -1,5 +1,6 @@
 import React from 'react'
-import { Route, Link, BrowserRouter as Router, Switch, useHistory, BrowserRouter } from 'react-router-dom'
+import { Route, Switch, useHistory } from 'react-router-dom'
+//import { Route, Link, BrowserRouter as Router, Switch, useHistory, BrowserRouter } from 'react-router-dom'
 import BrowsedCar from '../BrowsedCar/BrowsedCar'
 import CarCards from '../Car/CarCards'
 import MyBooking from '../My Booking/MyBooking'

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { GET_DATA, POST_ADDRESS, SET_ANSWER, SET_BOOKED_ITEM } from "./Actions";
 import { SORT_DATA } from "./Actions";
 import {SEARCH_DATA} from "./Actions";
@@ -23,9 +23,9 @@ const Reducer = (state:any, action:any) => {
             let scroll = state.scrollable
             let answer = state.answer1
             let address1 = state.address
-            if(action.page==2 && state.scrollable)arr=[...state.data,...arr]
-            if(action.page==1)scroll = true
-            if(arr.length==5) scroll = false
+            if(action.page===2 && state.scrollable)arr=[...state.data,...arr]
+            if(action.page===1)scroll = true
+            if(arr.length===5) scroll = false
             return{data:arr,scrollable:scroll,answer1:answer,address:address1,selectedItem:state.selectedItem}
         case SORT_DATA:
             let answer2 = state.answer1

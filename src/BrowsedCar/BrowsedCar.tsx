@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import Calendar from 'react-calendar';
 import StripeCheckout from 'react-stripe-checkout';
 import 'react-calendar/dist/Calendar.css';
 import { useHistory } from 'react-router';
@@ -18,7 +17,7 @@ const BrowsedCar = () =>{
     const features = selectedItem.features.split(",");
     let minSubscriptionMonths = ["1","6","9"]
     let filteredMonths: string[] = []
-    minSubscriptionMonths.map((monthNum)=>{if(+monthNum>=+selectedItem.minMonths)filteredMonths.push(monthNum)})
+    minSubscriptionMonths.forEach((monthNum)=>{if(+monthNum>=+selectedItem.minMonths)filteredMonths.push(monthNum)})
     const minDate = Moment(selectedItem.availableFrom).format('YYYY-MM-DD');
     const currentDate = Moment(selectedItem.availableFrom).format('YYYY-MM-DD');
     console.log("minDate",minDate);
@@ -38,7 +37,6 @@ const BrowsedCar = () =>{
     const[subscriptionMonths,setSubscriptionMonths] = useState('')
     const[priceToPay,setPriceToPay] = useState(0)
     const  monthSelectionHandler = (e:any)=> {
-        debugger
         const val = e.target.innerText.split(" ")[0];
         setSubscriptionMonths(val)
         let total = (+selectedItem.pricePerMonth)*(+val)*100
@@ -122,7 +120,7 @@ return(<>
             amount={priceToPay}
             currency="INR"    
       >
-          <button className ="bookNowButton" disabled={subscriptionMonths=='' || milesPerMonth=='' || date==''}>Book Now</button>
+          <button className ="bookNowButton" disabled={subscriptionMonths==='' || milesPerMonth==='' || date===''}>Book Now</button>
       </StripeCheckout>
         </div>
     </div>

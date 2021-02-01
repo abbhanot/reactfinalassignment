@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom'
+
+import { useHistory } from 'react-router-dom'
 
 const SuitabilityTool =() =>{
     let history = useHistory()
